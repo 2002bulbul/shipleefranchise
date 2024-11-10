@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundown Studio</title>
+    <link rel="shortcut icon" href="./shiplee_india_logo.jpg" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="Style.css">
+    <style>
+      /* Add Dark Mode Styles */
+      body.dark-mode {
+          background-color: #121212;
+          color: #ffffff;
+      }
+
+      .dark-mode button, .dark-mode a {
+          color: #ffffff;
+      }
+
+      /* Scroll-to-Top Button */
+      #scroll-to-top {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          display: none;
+          background-color: #6222CC;
+          color: #fff;
+          border: none;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          font-size: 20px;
+          cursor: pointer;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+          z-index: 1000;
+      }
+
+      #scroll-to-top:hover {
+          background-color: #8044FF;
+      }
+  </style>
+</head>
+<body>
+   <!-- Dark Mode Toggle -->
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode
+  </button>
+  <!-- Add Scroll-to-Top Button -->
+  <button id="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <div id="main">
+      <div class="container">
+        <div id="page1">
+          <nav>
+            <a href="" class="logo">SHIPLEE</a>
+            <div id="nav-part2">
+                <h4><a href="#">Home</a></h4>
+                <h4><a href="#">About</a></h4>
+                <h4><a href="#">Contact</a></h4>
+                <h4><a href="#" class="login-btn" id="loginBtn">Login</a></h4>
+            </div>
+          </nav>
+          <div class="text-box">
+            <h3>Join</h3>
+            <h3>the</h3>
+            <h1>Shiplee Franchise</h1>
+            <p>Become a part of our network and expand your business reach.</p>
+          </div>
+          <div class="social-icons">
+            <i class="fa-brands fa-square-instagram"></i>
+
+            </div>
+          <!-- Login Modal -->
+            <div id="loginModal" class="modal">
+             <div class="modal-content">
+             <span class="close-btn" id="closeBtn">&times;</span>
+             <h2>Login</h2>
+             <form id="loginForm">
+             <label for="username">Username:</label>
+             <input type="text" id="username" name="username" required>
+
+             <label for="password">Password:</label>
+             <input type="password" id="password" name="password" required>
+
+             <button type="submit" class="login-submit">Login</button>
+             </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="heading">
+         <h1>Why Choose Shiplee?</h1>
+      </div>
+      <div class="content">
+         <div class="hero-content">
+            <p>Traditional shipping solutions often lack transparency, leading to uninformed decisions. 
+               Shiplee fills this gap by providing businesses with all the necessary information.</p><br>
+            <p>Our user-friendly platform integrates seamlessly with online stores, allowing for 
+               automated sync and order tracking. We aim to simplify e-commerce, letting businesses 
+               focus on core operations rather than logistics.</p><br>
+            <p>Shiplee has empowered hundreds of e-commerce merchants to build their brands and provide 
+               delightful customer experiences. With over 29,000 pin codes served across India, we continue to 
+               expand our network, offering reliable and cost-effective shipping solutions.</p>
+            <button class="cta-button">Learn More</button>
+         </div>
+         <div class="hero-image">
+            <img src="./fast-delivery-concept_24908-56624.avif">
+            
+         </div>
+      </div>
+    </section>
+    <section id="benefits">
+      <!-- Add a dedicated container for the heading -->
+      <div class="heading-container">
+        <h2>Franchise Benefits</h2>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th><i class="icon fas fa-trophy"></i> Benefit</th>
+              <th><i class="icon fas fa-info-circle"></i> Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><i class="icon fas fa-dollar-sign"></i> Low Costs</td>
+              <td>Competitive franchise fees and operational savings.</td>
+            </tr>
+            <tr>
+              <td><i class="icon fas fa-map-marked-alt"></i> Wide Reach</td>
+              <td>Connect to thousands of delivery points across the network.</td>
+            </tr>
+            <tr>
+              <td><i class="icon fas fa-users"></i> Strong Support</td>
+              <td>Comprehensive training and round-the-clock assistance.</td>
+            </tr>
+            <tr>
+              <td><i class="icon fas fa-rocket"></i> Growth Opportunities</td>
+              <td>Expand your business with Shiplee’s innovative tools and resources.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <div class="courier-section">
+      <h2>From Anywhere to Everywhere</h2>
+      <p>
+        Our multi-courier network spread across 29000+ pin codes lets you say yes to every order, even from remote areas.
+      </p>
+      <a href="#" class="explore-link">Explore integrations</a>
+    </div>
+    
+    <div class="card-body">
+      <div class="courier-logos">
+        <div class="logos-container">
+          <!-- Replace # with the path to your images -->
+          <img src="./533-5336952_ecom-express-pvt-ltd-hd-png-download.png" alt="Courier Logo 1" class="courier-logo">
+          <img src="./download.png" alt="Courier Logo 2" class="courier-logo">
+          <img src="./download (1).png" alt="Courier Logo 3" class="courier-logo">
+          <img src="./download (2).png" alt="Courier Logo 4" class="courier-logo">
+          <img src="./download (1).jpg" alt="Courier Logo 5" class="courier-logo">
+          <img src="./download (3).png" alt="Courier Logo 6" class="courier-logo">
+          <img src="./cl-logo-8.png" alt="Courier Logo 7" class="courier-logo">
+          <img src="./download (5).png" alt="Courier Logo 8" class="courier-logo">
+          <img src="./download (4).png" alt="Courier Logo 9" class="courier-logo">
+          <img src="./downloaddd (2).jpg" alt="Courier Logo 10" class="courier-logo">
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
